@@ -1,5 +1,12 @@
-
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis modi
-    numquam eum tempore exercitationem quibusdam magni at cum, odio, blanditiis
-    nemo dolor ipsum dolore necessitatibus qui consectetur provident ipsam
-    impedit.
+<div class="row">
+    <div class="col-md-4 col-sm-6" *ngFor="let gif of resultados">
+        <div class="card">
+            <img [src]="gif.images.downsized_medium.url" [alt]="gif.title" class="card-image-top">
+            <div class="card-body">
+                <p class="card-text">
+                {{gif.title}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
