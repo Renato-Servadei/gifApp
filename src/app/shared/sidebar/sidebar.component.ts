@@ -14,7 +14,7 @@ export class SidebarComponent  {
   }
 
   traer( termino: string ) {
-    console.log(termino)
+    
     this.gifService.buscarGifs(termino)
   } 
 

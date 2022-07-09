@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-md-4 col-sm-6" *ngFor="let gif of resultados">
         <div class="card">
-            <img [src]="gif.images.downsized_medium.url" [alt]="gif.title" class="card-image-top">
+            <img [src]="gif.images.downsized_medium.url" [alt]="gif.title" class="card-image-top animate__animated animate__bounce">
             <div class="card-body">
                 <p class="card-text">
                 {{gif.title}}
